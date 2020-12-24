@@ -1,0 +1,222 @@
+/*header*/
+#main_navbar{
+
+	background-color: black;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#main_navbar h2{
+    color: orange;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #d3d3d3;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #d3d3d3;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+	color: blue;
+}
+.navbar-toggler{
+    background-color: white;
+}
+.nav-item{
+	color: orange;
+}
+
+/*dropdown*/
+
+#col-megamenu1 {
+    padding-left: 33.3%;
+  }
+#col-megamenu2 {
+    padding-right: 33.3%;
+
+}
+.dropdown-menu {
+    background-color: white;
+}
+#first,
+#second {
+    padding-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 10px;
+}
+.navbar .has-megamenu {
+    position: static !important;
+}
+#navbar-megamenu-last,
+#navbar-megamenu{
+    width: 270px;
+}
+
+/*circle button*/
+
+.circle-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.circle-btn i{
+    padding-top: 14.5px;
+    text-align: center;
+    color: black;
+    font-size: 22px;
+}
+a h6{
+    color: black; 
+}
+.col-megamenu a{
+    text-decoration: none;
+}
+
+/*media query: (left or right dropdown)*/
+@media(min-width: 991.99px) and (max-width: 1100px){
+    #navbar-megamenu-last{
+        right: 0;
+        left: auto;
+    }
+}
+@media(min-width: 1199.99px) and (max-width: 1320px){
+    #navbar-megamenu-last{
+        right: 0;
+        left: auto;
+    }
+}
+/*end dropdown*/
+
+
+/*content*/
+#content-tile{
+    margin-right:0px;
+}
+.card{
+    border: 1px black solid;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+/*card*/
+.circle-card{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 10px 5px #dcdcdc;
+    animation-duration: 1.2s;
+    animation-name: circlecard;
+}
+.circle-title{
+    padding-top: 50px; 
+    text-align: center;
+}
+#exp-button{
+    margin-top: 8px;
+}
+@keyframes circlecard{
+    0%{opacity: 0.1}
+    100%{opacity: 1}
+}
+#first{
+    position: relative;
+    animation-duration: 1.2s;
+    animation-name: topfloat; 
+
+}
+@keyframes topfloat{
+    0%{top: -20px;}
+    100%{top: 0px;}
+}
+#last{
+    position: relative;
+    animation-duration: 1.2s;
+    animation-name: lastfloat;
+}
+@keyframes lastfloat{
+    0%{top: 20px; box-shadow: none;}
+    100%{top: 0px;}
+}
+/*footer*/
+footer{
+	background-color: black;
+}
+
+.panel-footer .container{
+	padding-top: 20px;
+	padding-bottom: 20px;
+    padding-left: 40px;
+    color: white;
+}
+
+/*media query*/
+@media (max-width: 575.98px) { 
+    #navbarSupportedContent{
+    	padding-top: 15px;
+	    padding-left: 10px;
+	    padding-right: 10px;
+    }
+    #navbar-list{
+    	padding-left: 15px;
+	    background-color: black;
+    }
+    
+    .panel-footer .container{
+	    padding-left: 0px;
+	    text-align: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {  
+    #navbarSupportedContent{
+    	padding-top: 15px;
+	    padding-left: 20px;
+	    padding-right: 20px;
+    }
+    #navbar-list{
+    	padding-left: 15px;
+	    background-color: black;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    #navbar-list{
+	    background-color: black;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .navbar-light .navbar-nav .nav-link:hover {
+	    background-color: white;
+    }
+    #navbarSupportedContent {
+	    padding-left: 250px;
+	    padding-right: 10px;
+    }
+    .dropdown-item{
+	    background-color: gray;
+	    color: black;
+    } 
+    .dropdown-menu{
+	    background-color: gray;
+    }
+}
+
+@media (min-width: 1200px) { 
+    #navbarSupportedContent {
+	    padding-left: 470px;
+	    padding-right: 10px;
+    }
+    .navbar-light .navbar-nav .nav-link:hover {
+	    background-color: white;
+    }
+    .dropdown-item{
+	    background-color: gray;
+	    color: black;
+    } 
+    .dropdown-menu{
+	    background-color: gray;
+    }
+}
